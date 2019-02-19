@@ -82,7 +82,7 @@ int main()
     for(int x=0; x<bits_invertidos.size(); x++)
     cout <<bits_normais[x] << "_" <<bits_invertidos[x]<< endl;
 
-    ofstream Inversor ("inv.sv", ofstream::out);
+    ofstream Inversor ("inv.tv", ofstream::out);
 
     for(int x=0; x<Invertidos.size(); x++)
     Inversor << bits_normais[x] <<"_"<< bits_invertidos[x] << endl;
