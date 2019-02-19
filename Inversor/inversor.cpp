@@ -29,9 +29,7 @@ int main()
     }
     int i=0;
     Tabela.pop_back(); 
-    Numeros.pop_back(); 
-
-     
+    Numeros.pop_back();      
     //de acordo com a tabela ascii, inverte os bits e devolve como string representando binário
     for(int x=0; x<Numeros.size(); x++){
     if(Numeros[x] == 48){
@@ -42,7 +40,6 @@ int main()
         Entrada_inversor.push_back("1");//em ordem não invertida
      }
     }
-
     //concatena os bits que são de ordem invertida...    
     for(int x=0; x<Invertidos.size(); x++){
         if(!fg1) {r1 = Invertidos[x]; fg1=true; }
@@ -59,7 +56,6 @@ int main()
             r1="";r2="";r3="";r4="";r5="";
             fg1=false;fg2=false;fg3=false;fg4=false;fg5=false;
         }
-
     }
         //concatena os bits que são de ordem normal...
         for(int x=0; x<Entrada_inversor.size(); x++){
@@ -70,29 +66,19 @@ int main()
             r5 = r1 + r2 + r3 + r4; 
             if(r5.size()==4){
             bits_normais.push_back(r5);
-            }
-        
+            }        
         if(fg5){
             r1="";r2="";r3="";r4="";r5="";
             fg1=false;fg2=false;fg3=false;fg4=false;fg5=false;
         }
-
     }
 
-    //for(int x=0; x<bits_invertidos.size(); x++)
-    //cout <<bits_normais[x] << "_" <<bits_invertidos[x]<< endl;
-
-    ofstream Inversor ("inv.tv", ofstream::out);
-
-    int aux = bits_normais.size()-1;
-
-    cout << aux << "tamanho" << endl;
     
+    ofstream Inversor ("inv.tv", ofstream::out); 
     //Primeira e última combinações
     Inversor << bits_normais[0] <<"_"<< bits_invertidos[0] << endl;
     Inversor << bits_normais[bits_normais.size()-1] <<"_"<< bits_invertidos[bits_normais.size()-1] << endl;
-
-   Inversor.close();
+    Inversor.close();
 
  return 0; 
 }
