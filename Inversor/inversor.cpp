@@ -88,7 +88,7 @@ int main()
     //for(int x=0; x<Invertidos.size(); x++)
     //Inversor << bits_normais[x] <<"_"<< bits_invertidos[x] << endl;
     Inversor << bits_normais[0] <<"_"<< bits_invertidos[0] << endl;
-    Inversor << bits_normais[Invertidos.size()] <<"_"<< bits_invertidos[Invertidos.size()] << endl;
+    Inversor << bits_normais[Invertidos.size()-1] <<"_"<< bits_invertidos[Invertidos.size()-1] << endl;
 
    Inversor.close();
 
