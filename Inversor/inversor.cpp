@@ -88,7 +88,7 @@ int main()
 
     cout << aux << "tamanho" << endl;
     
-    ///Todas combinações
+    //Primeira e última combinações
     Inversor << bits_normais[0] <<"_"<< bits_invertidos[0] << endl;
     Inversor << bits_normais[bits_normais.size()-1] <<"_"<< bits_invertidos[bits_normais.size()-1] << endl;
 
