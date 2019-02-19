@@ -83,12 +83,14 @@ int main()
     //cout <<bits_normais[x] << "_" <<bits_invertidos[x]<< endl;
 
     ofstream Inversor ("inv.tv", ofstream::out);
+
+    int aux = bits_normais.size()-1;
+
+    cout << aux << "tamanho" << endl;
     
     ///Todas combinações
-    //for(int x=0; x<Invertidos.size(); x++)
-    //Inversor << bits_normais[x] <<"_"<< bits_invertidos[x] << endl;
     Inversor << bits_normais[0] <<"_"<< bits_invertidos[0] << endl;
-    Inversor << bits_normais[Invertidos.size()-1] <<"_"<< bits_invertidos[Invertidos.size()-1] << endl;
+    Inversor << bits_normais[bits_normais.size()-1] <<"_"<< bits_invertidos[bits_normais.size()-1] << endl;
 
    Inversor.close();
 
