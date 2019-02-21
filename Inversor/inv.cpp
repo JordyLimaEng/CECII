@@ -36,10 +36,10 @@ vector<string> Concat (vector<string> v){
 
 void Inv(vector <int> Numeros){
 
-	vector<string> Entrada_inversor;
-    vector<string> bits_invertidos;
-    vector<string> bits_normais;
-    vector<string> Invertidos;
+vector<string> Entrada_inversor;
+vector<string> bits_invertidos;
+vector<string> bits_normais;
+vector<string> Invertidos;
 
 
 	//de acordo com o valor inteiro, inverte os bits e devolve como string representando binário
@@ -67,19 +67,9 @@ void Inv(vector <int> Numeros){
 int main()
  {
 
-    vector<int> Numeros;
+ vector<int> Numeros{0,0,0,0,1,1,1,1};
 
-	Numeros.push_back(0);
-	Numeros.push_back(0);
-	Numeros.push_back(0);
-	Numeros.push_back(0);
-
-	Numeros.push_back(1);
-	Numeros.push_back(1);
-	Numeros.push_back(1);
-	Numeros.push_back(1);
-
-	Inv(Numeros);
+ Inv(Numeros);
 
  return 0;
 }
