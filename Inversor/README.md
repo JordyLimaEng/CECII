@@ -4,4 +4,4 @@ Consiste na concepção de um algoritmo base, usando linguagem de alto nível, p
 
 #Para compilar
 
-g++ -std=c++11 inversor.cpp -oinversor
+g++ -std=c++11 inv.cpp -oinv
