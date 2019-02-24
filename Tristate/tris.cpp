@@ -10,7 +10,7 @@ void Trist(vector<string> In_Tris, vector<string> Sel){
         
     for(int x=0; x<In_Tris.size(); x++){
         if(Sel[x] == "0"){
-            saida.push_back("Z");
+            saida.push_back("ZZZZ");
         }else{
            saida.push_back(In_Tris[x]);
         }
