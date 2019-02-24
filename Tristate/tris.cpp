@@ -16,7 +16,7 @@ void Trist(vector<string> In_Tris, vector<string> Sel){
         }
     }	
 
-    ofstream Tristate ("tris_tb.sv", ofstream::out);
+    ofstream Tristate ("tris_tv.sv", ofstream::out);
     
     //Tristate << "SEL" << "_"<< "IN" <<"_"<< "OUT" << endl;
     for(int x=0; x<In_Tris.size(); x++){
