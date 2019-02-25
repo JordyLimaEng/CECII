@@ -20,7 +20,7 @@ void Trist(vector<string> In_Tris, vector<string> Sel){
     
     //Tristate << "SEL" << "_"<< "IN" <<"_"<< "OUT" << endl;
     for(int x=0; x<In_Tris.size(); x++){
-    Tristate << Sel[x] << "_"<< In_Tris[x] <<"_"<< saida[x] << endl;
+    Tristate << In_Tris[x] <<"_"<<Sel[x] << "_"<< saida[x] << endl;
     }
 
     Tristate.close();
