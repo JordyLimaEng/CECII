@@ -56,7 +56,7 @@ vector<string> Invertidos;
 	bits_invertidos = Concat(Invertidos);
 	bits_normais = Concat(Entrada_inversor);
 
-    ofstream Inversor ("inv.sv", ofstream::out);
+    ofstream Inversor ("inv.tv", ofstream::out);
     //Primeira e última combinações
     Inversor << bits_normais[0] <<"_"<< bits_invertidos[0] << endl;
     Inversor << bits_normais[bits_normais.size()-1] <<"_"<< bits_invertidos[bits_normais.size()-1] << endl;
